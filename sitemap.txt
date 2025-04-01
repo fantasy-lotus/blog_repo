@@ -1,4 +1,6 @@
+http://example.com/2025/04/01/my-first-crawler/
 http://example.com/2025/03/30/origin/
 http://example.com/
 http://example.com/tags/Origin/
 http://example.com/tags/Life/
+http://example.com/tags/newbie/

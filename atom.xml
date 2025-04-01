@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-03-31T07:14:20.165Z</updated>
+  <updated>2025-04-01T14:28:27.936Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>my_first_crawler</title>
+    <link href="http://example.com/2025/04/01/my-first-crawler/"/>
+    <id>http://example.com/2025/04/01/my-first-crawler/</id>
+    <published>2025-04-01T14:15:34.000Z</published>
+    <updated>2025-04-01T14:28:27.936Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>笔者订阅了某一个非常赞的数据结构与算法刷题教程网站</p><p>不幸的是😭, 一年的订阅会员即将到期~ 续费的价格又十分的高昂</p><p>更令人痛心疾首的是, 这一年只有<del>刚订阅</del>和<del>快到期</del>的时候想起来要上网站学习</p><p>灵机一动, 将这个网站教学内容爬虫到本地的<del>秒点子</del>损招浮现在脑海</p><p>刻不容缓, 笔者开始了第一段爬虫🕷️之旅</p>]]></content>
+    
+    
+    <summary type="html">第一次尝试爬虫</summary>
+    
+    
+    
+    
+    <category term="Origin" scheme="http://example.com/tags/Origin/"/>
+    
+    <category term="newbie" scheme="http://example.com/tags/newbie/"/>
+    
+  </entry>
   
   <entry>
     <title>About Me</title>
