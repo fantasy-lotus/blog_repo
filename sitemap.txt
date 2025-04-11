@@ -1,4 +1,4 @@
-http://example.com/2025/04/11/vpn-docker/
+http://example.com/2025/04/11/docker_vpn/
 http://example.com/2025/03/30/origin/
 http://example.com/
 http://example.com/tags/Origin/
