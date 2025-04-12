@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/2025/04/11/docker-vpn/</loc>
     
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -30,28 +30,28 @@
   
   <url>
     <loc>http://example.com/tags/Origin/</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Life/</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Network/</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/Docker/</loc>
-    <lastmod>2025-04-11</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
