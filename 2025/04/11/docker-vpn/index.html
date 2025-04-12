@@ -9,7 +9,7 @@
 <p>正当笔者想使用AWS CLI对ddb进行某些邪恶的操作时…(指create table)</p>
 <pre><code class="hljs bash"></code></pre>
 
-<p>纳尼？今天**鲸鱼娘🐋**脾气这么炸裂的吗🤔？本机IP localhost:8000还能访问失败？</p>
+<p>纳尼？今天鲸鱼娘🐋脾气这么炸裂的吗🤔？本机IP localhost:8000还能访问失败？</p>
 <p>笔者赶忙使用<code>lsof -i :8000 &amp;&amp; docker ps</code> 查看docker以及端口状态，结果显示：一切正常 ~ 不正常的只有我 ~ </p>
 <h1 id="发现问题，解决问题"><a href="#发现问题，解决问题" class="headerlink" title="发现问题，解决问题"></a>发现问题，解决问题</h1><p>想到开启ＶＰＮ后经常会出现的一些奇怪的网络连接问题．．．笔者关闭了❌ＶＰＮ的连接，并重新尝试</p>
 <p>果不其然顺利连接，仿佛无事发生😅，🐋还是那个🐋，我还是那个我～</p>
@@ -17,7 +17,8 @@
 <p>先来谈谈Docker吧，她是一位集<strong>美貌</strong>和勤劳于一身的🐋娘，每天不辞辛苦托运着大大小小的集装箱（Container📦）在大海上航行</p>
 <p>  见图：<img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" 
   class="img-loading" data-original="/2025/03/30/origin/vpn/docker.png"" alt="docker-man"></p>
-</div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">Moon Lotus</a></p><p>原文链接:<a href="http://example.com/2025/04/11/docker-vpn/">[🕸️计算机网络]VPN让我的Docker🐋罢工了?</a></p><p>发表日期: 2025-04-11 21:08:09</p><p>更新日期: 2025-04-12 13:46:23</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/03/30/origin/" title="About Me">下一篇 About Me</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
+<p>每一个Container📦都会占据Docker的一个端口，并可以指定映射到宿主机的空闲端口</p>
+</div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">Moon Lotus</a></p><p>原文链接:<a href="http://example.com/2025/04/11/docker-vpn/">[🕸️计算机网络]VPN让我的Docker🐋罢工了?</a></p><p>发表日期: 2025-04-11 21:08:09</p><p>更新日期: 2025-04-12 13:59:52</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/03/30/origin/" title="About Me">下一篇 About Me</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
   clientID: '',
   clientSecret: '',
   repo: 'blog_repo',
