@@ -6,10 +6,10 @@
 <hr>
 <p>三年后的如今，大模型生态完成了井喷式的爆发，国产如Qwen，深度求索，国外如CloseAI，Gemini，Claude等等，各家的新模型，新技术，新协议如同雨后春笋般冒出</p>
 <p>多模态，联网搜索，RAG，推理模型，Deep Search，Workflow，Agent..</p>
-<p>2022年，大模型还只能作为对话类的生成式模型</p>
-<p>2025年，LLMs在Prompt，Tools，Context，ReAct，RAG，Human in Loop等等的加持下，已经可以接手许多复杂的任务（Agent的出现），达到了人类难以想象的高度</p>
+<p>2022年，大模型还只能作为对话类的生成式模型 - 能说会道🗣️</p>
+<p>2025年，LLMs在Prompt，Tools，Context，ReAct，RAG，Human in Loop等等的加持下，已经可以接手许多复杂的任务（Agent的出现），达到了人类难以想象的高度 - 能干实事💻！</p>
 <p><del>舔AI的话多说无益</del>，接下来就选MCP这个目前最为“ 明星 ”的技术作为迈入入AI技术花园的引子吧~</p>
-<h2 id="抽丝剥茧：什么是Function-Calling"><a href="#抽丝剥茧：什么是Function-Calling" class="headerlink" title="抽丝剥茧：什么是Function Calling"></a>抽丝剥茧：什么是Function Calling</h2><p>你说你了解行业热点MCP技术，我问你<em>Function Calling</em>是什么却是一问三不知？😅</p>
+<h2 id="画龙点睛：什么是Function-Calling"><a href="#画龙点睛：什么是Function-Calling" class="headerlink" title="画龙点睛：什么是Function Calling"></a>画龙点睛：什么是Function Calling</h2><p>你说你了解行业热点MCP技术，我问你<em>Function Calling</em>是什么却是一问三不知？😅</p>
 <p>简单而言，<em>Function Calling</em>就是赋予LLMs调用外部函数能力的一种机制</p>
 <p>❗注意，大模型本身<strong>并没有执行函数的能力</strong>，目前各种AI应用中，大模型的作用是作为核心的推理大脑</p>
 <blockquote>
@@ -21,10 +21,14 @@
 <p>就会在他的当次输出中以结构化的格式（如JSON）包含自己需要调用某个函数，传入的参数</p>
 <p>别的中间层检测到输出中包含特殊的结构化调用文本，就会传参在外部执行对应的函数，并将函数的返回值拼接成Prompt再次喂给大模型</p>
 <p>——这样，LLMs就具备了<strong>极其重要</strong>的感知以及和外界交互的能力。毕竟，这里的函数是一个抽象，可以是任何操作，你能想象到的所有功能，只要能规定好入参出参，就能给予大模型“调用”这个操作的能力！这很令人兴奋，对吧？</p>
+<h2 id="高度抽象与集成：Tools"><a href="#高度抽象与集成：Tools" class="headerlink" title="高度抽象与集成：Tools"></a>高度抽象与集成：Tools</h2><p>严格来说，上文提到的<strong>任何操作的能力</strong>更偏向于Tools（工具）的定义一些，Function更明指预定义好的简单函数，而Tools则可以更为复杂以及抽象，例如与操作系统交互，多步骤任务，等等。不过，不管是Funtion Calling还是Tools Calling，他们的核心思想都是一样的。</p>
 <blockquote>
-<p>严格来说，任何操作的能力更偏向于Tools（工具）的定义一些，Function更明指预定义好的简单函数，而Tools则可以更为复杂以及抽象，例如与操作系统交互，多步骤任务，等等。不过，不管是Funtion Calling还是Tools Calling的核心思想都是一样的。</p>
+<p>在理解了 Function Calling 赋予大模型调用外部函数的能力后，我们自然会思考：如果任务更复杂，需要多个步骤或动态决策，单靠调用一个函数是否足够？</p>
 </blockquote>
-</div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">Moon Lotus</a></p><p>原文链接:<a href="http://example.com/2025/05/02/mcp-01/">将MCP抽丝剥茧，什么是Function Calling？</a></p><p>发表日期: 2025-05-02 13:19:21</p><p>更新日期: 2025-05-02 15:09:59</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/03/30/origin/" title="About Me">下一篇 About Me</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
+<p><del>答案是肯定的</del>，就算再怎么复杂，我用面向过程编程，不还是能全写一个main函数里面，不就行了？</p>
+<p>好了，不开玩笑了，实际开发中，多个供大模型调用的功能肯定是分模块，多人协作开发的，另外，全写一个Function里，代码复用率也会低的离谱</p>
+<p>简单来说，Tool就是Function的集成与抽象，有点像OOP中的封装思想：把多个Function在内部调用的过程封装起来，只对外界暴露一个Tool的抽象，屏蔽了底层的复杂性，这么说是不是容易理解多了？</p>
+</div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">Moon Lotus</a></p><p>原文链接:<a href="http://example.com/2025/05/02/mcp-01/">将MCP抽丝剥茧，什么是Function Calling？</a></p><p>发表日期: 2025-05-02 13:19:21</p><p>更新日期: 2025-05-02 15:46:17</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/03/30/origin/" title="About Me">下一篇 About Me</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
   clientID: '',
   clientSecret: '',
   repo: 'blog_repo',
