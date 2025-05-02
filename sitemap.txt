@@ -1,4 +1,7 @@
 http://example.com/2025/03/30/origin/
+http://example.com/2025/05/02/mcp-01/
 http://example.com/
 http://example.com/tags/Origin/
 http://example.com/tags/Life/
+http://example.com/tags/MCP/
+http://example.com/tags/AI/

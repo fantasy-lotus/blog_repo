@@ -10,6 +10,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://example.com/2025/05/02/mcp-01/</loc>
+    
+    <lastmod>2025-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>http://example.com/</loc>
@@ -28,6 +37,20 @@
   
   <url>
     <loc>http://example.com/tags/Life/</loc>
+    <lastmod>2025-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/MCP/</loc>
+    <lastmod>2025-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/AI/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
